@@ -3,8 +3,8 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Mulish", sans-serif;
   color: #333333;
 }
 
@@ -361,18 +361,18 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #ffffff;
 }
 
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
 }
 
-.header-top__search {
+.navbar-top__search {
   margin-right: auto;
   margin-left: 108px;
 }
