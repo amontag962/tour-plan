@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -72,7 +73,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -109,7 +111,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -256,7 +259,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -290,7 +294,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -370,9 +375,15 @@ template {
 }
 
 .navbar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 40px 0px;
 }
 
@@ -389,9 +400,15 @@ template {
   list-style-type: none;
   margin: 0;
   padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffffff;
 }
 
@@ -412,6 +429,8 @@ template {
 }
 
 .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -442,8 +461,12 @@ template {
 }
 
 .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
 
@@ -451,7 +474,8 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .user__name {
@@ -509,7 +533,6 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
     width: 92%;
   }
   .navbar-top__search, .navbar-top__user {
@@ -521,10 +544,20 @@ template {
   .menu-button {
     width: 16px;
     height: 13px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border: none;
     background-color: #ffffff;
   }
@@ -538,7 +571,7 @@ template {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 280px;
+    width: 92%;
   }
   .logo {
     width: 99px;
