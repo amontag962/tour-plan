@@ -57,8 +57,47 @@
         height: 1px
         background-color: $text-color
         border-radius: 5px
+  .stars
+    flex-basis: content
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
 @media (max-width: 576px)
   .container
-    width: 92%
+    width: 88%
   .logo
     width: 99px
+    &__image
+      height: 13px
+      margin-top: 10px
+  .navbar
+    height: 70px
+    &-top
+      height: 13px
+      padding: 28px 0
+      &__menu-button
+        margin-top: 13px
+  .breadcrumb
+    height: 47px
+  .hotel
+    padding-top: 0
+    &-info
+      &__offer
+        margin-right: 2px
+  .stars
+    &__wrapper
+      margin-top: 7px
+      margin-right: 18px
+
