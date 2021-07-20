@@ -7,5 +7,14 @@ const swiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
   },
+
+  // Scroll effect
   effect: "coverflow",
+
+  // Scroll keyboard
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
 });
