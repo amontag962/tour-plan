@@ -4,7 +4,12 @@ const swiper = new Swiper(".swiper-container", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button-next",
-    prevEl: ".slider-button-prev",
+    nextEl: ".slider-button--next",
+    prevEl: ".slider-button--prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
   },
 });
