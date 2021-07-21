@@ -532,6 +532,11 @@ template {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
 .stars {
   width: 100%;
 }
@@ -621,6 +626,25 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.booking {
+  background-color: #0A223D;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 350px;
+  min-height: 210px;
+  padding: 29px 29px 26px 26px;
+}
+
+.booking__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__price {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1200px) {
