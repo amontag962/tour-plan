@@ -122,7 +122,6 @@
     width: 100%
   .map
     width: 100%
-
 @media (max-width: 576px)
   .container
     width: 88%
@@ -141,10 +140,13 @@
   .breadcrumb
     height: 47px
   .hotel
-    padding-top: 0
+    padding: 0
     &-info
+      padding-bottom: 38px
       &__offer
-        margin-right: 2px
+        margin-top: 8px
+        margin-left: 2px
+        padding: 3px 9px 4px 10px
   .stars
     &__wrapper
       margin-top: 7px
@@ -153,6 +155,8 @@
     &-right
       justify-content: start
       &__booking
+        padding-left: 24px
+        padding-right: 25px
         margin-bottom: 20px
     &__slider
       margin-bottom: 20px
@@ -160,4 +164,36 @@
     height: 180px
   .map
     height: 173px
-  
+  .booking
+    &__info
+      margin-right: -3px
+      margin-bottom: 8px
+  .newsletter
+    padding-top: 53px 
+    padding-bottom: 83px
+    margin-top: -8px
+    &__subscribe
+      width: 281px
+      margin: auto
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+    &-title
+      margin: 22px 0 37px 19px
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        margin-top: 6px
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .subscribe
+    &__input
+      padding-left: 20px
+@media (max-width: 506px)
+  .newsletter
+    &__subscribe
+      width: 88%
