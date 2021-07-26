@@ -9,6 +9,12 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .hotel
+    &__slider
+      width: 580px
+  .revievs
+    &__title
+      margin-top: 1px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -43,6 +49,8 @@
       padding-right: 90px
   .hotel
     padding-bottom: 60px
+    &__slider
+      width: 100%
     &-info
       &__offer
         margin-top: 5px
@@ -70,6 +78,24 @@
     padding: 72px 0
   .subscribe__button
     padding-right: 6px
+  .reviews
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        max-width: 580px
+        &:after, &:before
+          display: none
+      &__button
+        top: 50%
+        &--prev
+          left: 1px
+        &--next
+          right: 1px
 @media (max-width: 768px)
   .container
     width: 92%
@@ -114,6 +140,9 @@
         margin-left: 0
   .slider
     height: 450px
+  .newsletter
+    &-wrapper
+      width: 92%
   .hotel
     &-right
       flex-direction: column
@@ -122,6 +151,21 @@
     width: 100%
   .map
     width: 100%
+  .reviews
+    &-slider
+      &__item
+        width: 95%
+        padding: 0 30px 30px
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -65px
+          transform: translate(50%, 0)
 @media (max-width: 576px)
   .container
     width: 88%
@@ -141,6 +185,9 @@
     height: 47px
   .hotel
     padding: 0
+    &-slider
+      &__image
+        width: 100%
     &-info
       padding-bottom: 38px
       &__offer
@@ -160,6 +207,7 @@
         margin-bottom: 20px
     &__slider
       margin-bottom: 20px
+      height: 180px
   .slider
     height: 180px
   .map
@@ -173,13 +221,13 @@
     padding-bottom: 83px
     margin-top: -8px
     &__subscribe
-      width: 281px
+      width: 95%
       margin: auto
     &-wrapper
       display: flex
       flex-wrap: wrap
     &-title
-      margin: 22px 0 37px 19px
+      margin: 22px 0 37px 7px
       font-style: normal
       font-weight: 300
       font-size: 20px
@@ -193,7 +241,30 @@
   .subscribe
     &__input
       padding-left: 20px
-@media (max-width: 506px)
-  .newsletter
-    &__subscribe
-      width: 88%
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          left: 50%
+          margin-left: -92px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -88px
+          transform: translate(50%, 0)
+      &__item
+        width: 98%
+      &__avatar
+        margin-top: 0
+        margin-right: 3px
+    &__title
+      width: 92%
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+      margin-left: 10px
+  .stars
+    &__wrapper
+      margin: 0
