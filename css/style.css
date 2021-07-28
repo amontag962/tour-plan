@@ -1729,6 +1729,10 @@ template {
   .stars__wrapper {
     margin: 0;
   }
+  .stars__wrapper-top {
+    margin-top: 8px;
+    margin-right: 17px;
+  }
   .activities {
     padding-top: 22px;
     padding-bottom: 40px;
