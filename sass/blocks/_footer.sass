@@ -34,10 +34,18 @@
       grid-column: span 2
       margin-top: 24px
       margin-left: 14px
-  &__contact-details
-    grid-column: span 2
-    margin-top: 3px
-    margin-left: -6px
+  &__contact
+    &-details
+      grid-column: span 2
+      margin-top: 3px
+      margin-left: -6px
+    &-form
+      grid-column: span 2
+  &__form
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
   &__text
     margin: 23px 0 22px 0
     font-style: normal
@@ -81,3 +89,10 @@
     color: inherit
   &__ul-wrapper
     margin-bottom: 22px
+  &__input
+    background-color: $white
+    border-radius: 4px
+    border: none
+    padding: 0 23px
+    height: 50px
+    margin-bottom: 15px
