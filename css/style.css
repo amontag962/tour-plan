@@ -979,6 +979,7 @@ template {
 }
 
 .activities__title {
+  margin-left: -2px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -992,6 +993,10 @@ template {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
+}
+
+.activities-wrapper__card {
+  margin-left: -3px;
 }
 
 .activities-wrapper__card--golf {
@@ -1254,6 +1259,30 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 696px;
+  margin-top: 96px;
+  margin-left: auto;
+}
+
+.footer-info__disclamer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -3px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  min-width: 283px;
+}
+
+.footer-info__image {
+  margin: -1px 3px 0 0;
 }
 
 @media (max-width: 1200px) {
