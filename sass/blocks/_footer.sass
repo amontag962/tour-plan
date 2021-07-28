@@ -39,7 +39,7 @@
     margin-top: 3px
     margin-left: -6px
   &__text
-    margin: 23px 0 17px 0
+    margin: 23px 0 22px 0
     font-style: normal
     font-weight: normal
     font-size: 14px
@@ -58,30 +58,26 @@
     &--inline
       margin: 0 44px 0 0
   &__item
+    display: flex
+    align-items: flex-start
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 157%
     color: $input-text
-    &-ul
-      font-style: normal
-      font-weight: normal
-      font-size: 14px
-      line-height: 160%
-      &--map
-        display: flex
-        align-items: center
-      &--phone
-        display: flex
-        margin-top: 15px
-  &__contacts-content
-    margin-top: 3px
-  &__tel-1, &__tel-2, &__tel-3
-    display: block
-  &__icon-map
-    margin: 10px 22px 0 9px
-  &__icon-phone
-    margin: -30px 19px 0 6px
+  &__icon
+    &--map
+      margin: 5px 22px 0 9px
+    &--phone
+      margin: 18px 0 0 6px
+    &--email
+      margin: 3px 19px 0 8px
+  &__contacts-ul
+    list-style: none
+    margin-top: 13px
+    padding-left: 19px
   &__link
     text-decoration: none
     color: inherit
+  &__ul-wrapper
+    margin-bottom: 22px

@@ -1117,7 +1117,7 @@ template {
 }
 
 .footer__text {
-  margin: 23px 0 17px 0;
+  margin: 23px 0 22px 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1144,6 +1144,8 @@ template {
 }
 
 .footer__item {
+  display: flex;
+  align-items: flex-start;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1151,42 +1153,31 @@ template {
   color: #BDBDBD;
 }
 
-.footer__item-ul {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
+.footer__icon--map {
+  margin: 5px 22px 0 9px;
 }
 
-.footer__item-ul--map {
-  display: flex;
-  align-items: center;
+.footer__icon--phone {
+  margin: 18px 0 0 6px;
 }
 
-.footer__item-ul--phone {
-  display: flex;
-  margin-top: 15px;
+.footer__icon--email {
+  margin: 3px 19px 0 8px;
 }
 
-.footer__contacts-content {
-  margin-top: 3px;
-}
-
-.footer__tel-1, .footer__tel-2, .footer__tel-3 {
-  display: block;
-}
-
-.footer__icon-map {
-  margin: 10px 22px 0 9px;
-}
-
-.footer__icon-phone {
-  margin: -30px 19px 0 6px;
+.footer__contacts-ul {
+  list-style: none;
+  margin-top: 13px;
+  padding-left: 19px;
 }
 
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__ul-wrapper {
+  margin-bottom: 22px;
 }
 
 @media (max-width: 1200px) {
