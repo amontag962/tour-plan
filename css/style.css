@@ -1519,6 +1519,12 @@ template {
   .footer__input {
     flex-basis: 47%;
   }
+  .footer__form-name {
+    padding: 0 84px 0 23px;
+  }
+  .footer__form-number {
+    padding: 0 85px 0 22px;
+  }
   .footer-info__wrapper {
     margin-top: 58px;
   }
