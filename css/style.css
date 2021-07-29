@@ -1606,6 +1606,12 @@ template {
   }
 }
 
+@media (max-width: 626px) {
+  .footer__additional {
+    margin-left: -8px;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
     width: 88%;
