@@ -31,6 +31,12 @@ textarea {
   resize: none;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1115,8 +1121,7 @@ template {
   align-items: start;
   grid-row: 2 / 4;
   grid-column: span 2;
-  margin-top: 24px;
-  margin-left: 14px;
+  margin: 30px 0 0 16px;
 }
 
 .footer__contact-details {
@@ -1125,8 +1130,16 @@ template {
   margin-left: -6px;
 }
 
+.footer__contact-details--wrapper {
+  margin: 10px 0 0 -5px;
+}
+
 .footer__contact-form {
   grid-column: span 2;
+}
+
+.footer__contact-form--wrapper {
+  margin: 6px 0 0 4px;
 }
 
 .footer__form {
@@ -1222,11 +1235,13 @@ template {
 }
 
 .footer__form-name {
-  padding-right: 85px;
+  padding-left: 23px;
+  padding-right: 107px;
 }
 
 .footer__form-number {
-  padding-right: 84px;
+  padding-left: 22px;
+  padding-right: 106px;
 }
 
 .footer__message {
@@ -1504,6 +1519,12 @@ template {
   .footer__input {
     flex-basis: 47%;
   }
+  .footer__form-name {
+    padding: 0 84px 0 23px;
+  }
+  .footer__form-number {
+    padding: 0 85px 0 22px;
+  }
   .footer-info__wrapper {
     margin-top: 58px;
   }
@@ -1603,6 +1624,12 @@ template {
   }
   .footer__input {
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 626px) {
+  .footer__additional {
+    margin-left: -8px;
   }
 }
 
