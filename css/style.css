@@ -31,6 +31,12 @@ textarea {
   resize: none;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1222,11 +1228,13 @@ template {
 }
 
 .footer__form-name {
-  padding-right: 85px;
+  padding-left: 23px;
+  padding-right: 107px;
 }
 
 .footer__form-number {
-  padding-right: 84px;
+  padding-left: 22px;
+  padding-right: 106px;
 }
 
 .footer__message {
