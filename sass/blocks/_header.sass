@@ -30,6 +30,33 @@
       line-height: 18px
   &-bottom
     background-color: $dark
+.menu
+    &-button
+      position: relative
+      width: 16px
+      height: 13px
+      padding: 0
+      display: none
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: $white
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+        border-radius: 5px
+      &_active
+        margin-top: 
+        span:nth-child(2)
+          opacity: 0
+        span:last-child
+          transform: rotate(45deg)
+          position: absolute
+        span:first-child
+          transform: rotate(-45deg)
+          position: absolute
 .logo
   width: 177px
 .search

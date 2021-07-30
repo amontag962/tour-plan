@@ -422,6 +422,40 @@ template {
   background-color: #0A223D;
 }
 
+.menu-button {
+  position: relative;
+  width: 16px;
+  height: 13px;
+  padding: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border: none;
+  background-color: #ffffff;
+}
+
+.menu-button__line {
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.menu-button_active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button_active span:last-child {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.menu-button_active span:first-child {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
 .logo {
   width: 177px;
 }
@@ -1598,21 +1632,7 @@ template {
     margin-bottom: 28px;
   }
   .menu-button {
-    width: 16px;
-    height: 13px;
-    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    border: none;
-    background-color: #ffffff;
-  }
-  .menu-button__line {
-    width: 16px;
-    height: 1px;
-    background-color: #333333;
-    border-radius: 5px;
   }
   .user__name--light {
     color: #ffffff;
